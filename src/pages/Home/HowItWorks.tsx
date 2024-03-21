@@ -5,13 +5,29 @@ import HowItsWorkCard from "../../common/HowItsWorkCard";
 
 export default function HowItWorks() {
   const [active, setActive] = useState(0);
-
+  let howitWork: any = [];
   const hows = [
     "In-person",
     "Home collection kit",
     "At-home test",
     "In home simple collection",
   ];
+
+  if (active == 0) {
+    howitWork = howItWorksData;
+  }
+
+  if (active == 1) {
+    howitWork = howItWorksData.slice(0, 2);
+  }
+
+  if (active == 2) {
+    howitWork = howItWorksData.slice(0, 3);
+  }
+
+  if (active == 3) {
+    howitWork = howItWorksData.slice(0, 1);
+  }
   return (
     <div className=" py-20 bg-lightGray ">
       <div className="w-[85%] mx-auto">
@@ -33,7 +49,7 @@ export default function HowItWorks() {
             })}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-            {howItWorksData.map((data, i) => {
+            {howitWork?.map((data: any, i: any) => {
               return <HowItsWorkCard data={data} number={i + 1} key={i} />;
             })}
           </div>

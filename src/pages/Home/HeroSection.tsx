@@ -1,6 +1,13 @@
 import AppButton from "../../common/Button";
 
 export default function HeroSection() {
+  const scrollToTox = () => {
+    const element = document.getElementById("tox-test");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative h-[86vh] overflow-hidden flex items-center">
       <img
@@ -22,7 +29,9 @@ export default function HeroSection() {
             health.
           </p>
           <div className="flex mt-6 justify-start">
-            <AppButton title="About Our Test" />
+            <div onClick={scrollToTox}>
+              <AppButton title="About Our Test" />
+            </div>
           </div>
         </div>
       </div>

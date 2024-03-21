@@ -7,6 +7,12 @@ export default function HowItsWorkCard({
   number: number;
   data: any;
 }) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="w-full flex items-center justify-center h-[100%]">
       <div className="p-4 w-[540px] h-[100%] bg-white rounded-[15px] flex flex-col justify-start">
@@ -20,6 +26,7 @@ export default function HowItsWorkCard({
         {data.name && data.path && (
           <div className="mt-3 text-center pb-3">
             <Link
+              onClick={scrollToTop}
               className="text-lightBlue border-b border-lightBlue"
               to={data.path}
             >

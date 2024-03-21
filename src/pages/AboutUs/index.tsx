@@ -1,4 +1,4 @@
-import AppButton from "../../common/Button";
+// import AppButton from "../../common/Button";
 import AboutUsCard from "./AboutUsCard";
 import { aboutUsData } from "./utils";
 
@@ -43,7 +43,7 @@ export default function AboutUs() {
             <AboutUsCard data={data} key={i} />
           ))}
         </div>
-        <div className="w-full my-[4rem] md:my-[8rem]">
+        {/* <div className="w-full my-[4rem] md:my-[8rem]">
           <div className="w-full bg-lightBlue rounded-[15px] py-10">
             <div className="lg:w-[750px] m-auto">
               <h2 className="text-lg sm:text-2xl md:text-4xl text-white text-center font-[500]  ">
@@ -59,7 +59,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

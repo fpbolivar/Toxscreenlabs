@@ -37,12 +37,12 @@ export const HomePageAssest = {
     {
       name: "Request information",
       img: "/icons/receipt-search.png",
-      path: "/",
+      path: "/request-information",
     },
     {
       name: "Shop for Tests",
       img: "/icons/bag.png",
-      path: "/",
+      path: "/tests",
     },
   ],
 };
@@ -52,7 +52,7 @@ export const howItWorksData = [
     title: "Buy a lab test & schedule an appointment",
     description:
       "No doctor visit required for purchase. Book a visit to one of 2000+ Quest locations.",
-    path: "/",
+    path: "/request-information",
     name: "Schedule an appointment",
   },
   {

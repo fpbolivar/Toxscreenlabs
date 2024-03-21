@@ -20,7 +20,7 @@ export default function TestFromTox() {
   ]);
 
   return (
-    <div className="card">
+    <div className="card" id="tox-test">
       <div className=" py-20 bg-lightGray ">
         <div className="w-[95%] md:w-[85%] mx-auto">
           <AppHeading

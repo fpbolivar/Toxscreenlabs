@@ -4,6 +4,12 @@ import { HomePageAssest } from "./utils";
 
 export default function Info() {
   const { infos } = HomePageAssest;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="w-[85%] m-auto py-16">
       <div className="flex w-full justify-center md:justify-between flex-wrap gap-x-4 gap-y-8 ">
@@ -18,6 +24,7 @@ export default function Info() {
                 <p className="mt-4 font-semibold">{info.name}</p>
               </div>
               <Link
+                onClick={scrollToTop}
                 key={info.name}
                 to={info.path}
                 className="text-3xl hover:text-dark/80 text-dark"

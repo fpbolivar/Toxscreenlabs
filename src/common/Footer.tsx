@@ -42,6 +42,12 @@ const FooterLinksRender = ({
   title,
   social = false,
 }: IFooterLinksRender) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <h3 className="font-semibold text-darkBlue mb-6 text-xs text-center sm:text-start">
@@ -54,6 +60,7 @@ const FooterLinksRender = ({
               key={`${S.name} ${uniqid()}`}
               className="text-3xs text-center sm:text-start"
               to={S.path}
+              onClick={scrollToTop}
             >
               {S.icon && <S.icon />}
             </Link>
@@ -65,6 +72,7 @@ const FooterLinksRender = ({
               <Link
                 to={S.path}
                 className="hover:text-lightBlue/90 text-center sm:text-start"
+                onClick={scrollToTop}
               >
                 {S.name}
               </Link>

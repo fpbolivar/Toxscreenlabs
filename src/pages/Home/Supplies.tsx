@@ -2,6 +2,7 @@ import AppHeading from "../../common/Heading";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Card from "../../common/Card";
 import { testSuppliesData } from "./utils";
+import uniqid from "uniqid";
 
 export default function Supplies() {
   return (
@@ -26,7 +27,7 @@ export default function Supplies() {
                 key={index}
                 title={card.title}
                 price={card.price}
-                url={`/`}
+                url={`${card.url}${uniqid()}`}
               />
             ))}
           </div>
