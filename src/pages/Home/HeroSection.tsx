@@ -19,14 +19,16 @@ export default function HeroSection() {
         <div className="z-10 relative">
           <h1
             style={{ textShadow: "0px 0px 16px white" }}
-            className="text-3xl lg:text-5xl lg:leading-[4rem] font-bold text-darkBlue lg:w-[35rem]"
+            className="text-2xl smtext-3xl lg:text-5xl lg:leading-[3.5rem] font-bold text-darkBlue lg:w-[40rem]"
           >
-            Transforming Tests into Triumphs for Your Health and Well-Being!
+            Tox Screen Labs {"\n"} <br /> Strategic Laboratory Partner for Rehab
+            Centers, Treatment Facilities & more.
           </h1>
-          <p className=" text-2xs lg:w-[40rem] mt-4">
-            At Tox Screen Labs, we are committed to providing cutting-edge
-            testing services to empower individuals on their journey to optimal
-            health.
+          <p className="text-sm sm:text-2xs lg:w-[40rem] mt-4">
+            At Tox Screen Labs, we are radically committed to providing
+            cutting-edge testing services including Tox Screens, UTI Testing &
+            more with a dedicated laser-sharp focus on your operational
+            expectations.
           </p>
           <div className="flex mt-6 justify-start">
             <div onClick={scrollToTox}>

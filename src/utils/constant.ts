@@ -34,10 +34,10 @@ export const navItems = [
     name: "News",
     path: APP_ROUTES.news,
   },
-  {
-    name: "Jobs",
-    path: APP_ROUTES.jobs,
-  },
+  // {
+  //   name: "Jobs",
+  //   path: APP_ROUTES.jobs,
+  // },
 ];
 
 export const footerItems = {

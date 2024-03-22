@@ -1,10 +1,15 @@
 import AppHeading from "../../common/Heading";
 import AppButton from "../../common/Button";
 import JobCard from "./JobCard";
+import JobApply from "./JobApply";
+import { useState } from "react";
 
 export default function Job() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="h-full w-full">
+      {showModal && <JobApply close={() => setShowModal(false)} />}
       <div className="h-full w-[95%] md:w-[65%] m-auto mt-6 md:mt-14 pb-10">
         <div className="flex justify-center w-full">
           <AppHeading
@@ -20,11 +25,13 @@ export default function Job() {
           <JobCard />
         </div>
         <div className="mt-8 md:mt-16 mb-8 p-2 flex items-center justify-center">
-          <AppButton
-            title="Apply"
-            className="bg-transparent !text-lightBlue  hover:bg-transparent hover:!text-lightBlue/70 w-[140px]"
-            style={{ border: "1px solid #41BFDD", borderRadius: "15px" }}
-          />
+          <div onClick={() => setShowModal(true)}>
+            <AppButton
+              title="Apply"
+              className="bg-transparent !text-lightBlue  hover:bg-transparent hover:!text-lightBlue/70 w-[140px]"
+              style={{ border: "1px solid #41BFDD", borderRadius: "15px" }}
+            />
+          </div>
         </div>
       </div>
     </div>

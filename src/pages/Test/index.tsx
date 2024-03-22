@@ -59,12 +59,19 @@ const TestDetail = () => {
           </div>
 
           <footer className="flex mt-4">
-            <Button
+            {/* <Button
               label="Purchase"
               className=" bg-lightBlue text-white px-20 py-4 text-lg rounded-lg hover:bg-darkBlue duration-300 ease-in transition-all"
               size="large"
               onClick={handleStripePayment}
-            />
+              
+            /> */}
+            <a
+              href="/payment"
+              className=" bg-lightBlue text-white px-20 py-4 text-lg rounded-lg hover:bg-darkBlue duration-300 ease-in transition-all"
+            >
+              Purchase
+            </a>
           </footer>
         </div>
       </article>

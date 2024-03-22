@@ -16,7 +16,7 @@ import {
 } from "react-router-dom";
 import RequestInfo from "./pages/RequestInfo";
 import HowThisWorks from "./pages/HowThisWorks";
-import Jobs from "./pages/Jobs";
+// import Jobs from "./pages/Jobs";
 import Apply from "./pages/apply";
 import AboutUs from "./pages/AboutUs";
 import News from "./pages/News";
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
       <Route path={`${APP_ROUTES.news}`} index element={<News />} />
       <Route path={`${APP_ROUTES.news}/:id`} element={<NewsArticle />} />
       <Route path={`${APP_ROUTES.howThisWorks}`} element={<HowThisWorks />} />
-      <Route path={`${APP_ROUTES.jobs}`} element={<Jobs />} />
+      {/* <Route path={`${APP_ROUTES.jobs}`} element={<Jobs />} /> */}
       <Route path={`${APP_ROUTES.apply}`} element={<Apply />} />
       <Route path={`${APP_ROUTES.aboutUs}`} element={<AboutUs />} />
       <Route path={`${APP_ROUTES.payment}`} element={<Payment />} />
